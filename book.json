@@ -2,6 +2,7 @@
   "title": "Whitepaper",
   "description": "Whitepaper of KeyItemApp",
   "plugins": ["custom-favicon"],
-  "pluginsConfig": {"favicon": "./favicon.ico"
-  }
+  "pluginsConfig": {"favicon": "public/favicon.ico"
+  },
+  "output": "docs"
 }
