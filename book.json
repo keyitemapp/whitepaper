@@ -1,5 +1,8 @@
 {
   "plugins": ["custom-favicon"],
-  "pluginsConfig": {"favicon": "public/favicon.ico"
-  }
+  "pluginsConfig": {
+    "favicon": "./images/favicon.ico"
+  },
+  "title": "Whitepaper",
+  "description": "Whitepaper of KeyItemApp"
 }
