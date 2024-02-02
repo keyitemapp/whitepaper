@@ -1,0 +1,341 @@
+
+<!DOCTYPE HTML>
+<html lang="es" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Mecanismo · Whitepaper</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="development_and_deployment.html" />
+    
+    
+    <link rel="prev" href="introduction.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escribe para buscar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    KeyItem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Saludos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="mechanism.html">
+            
+                <a href="mechanism.html">
+            
+                    
+                    Mecanismo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="development_and_deployment.html">
+            
+                <a href="development_and_deployment.html">
+            
+                    
+                    Desarrollo y Despliegue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="token.html">
+            
+                <a href="token.html">
+            
+                    
+                    Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="roadmap.html">
+            
+                <a href="roadmap.html">
+            
+                    
+                    Hoja de Ruta
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="recruitment.html">
+            
+                <a href="recruitment.html">
+            
+                    
+                    Reclutamiento
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="links.html">
+            
+                <a href="links.html">
+            
+                    
+                    Enlaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado con GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Mecanismo</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="mecanismo-de-pago-para-jugadores">Mecanismo de Pago para Jugadores</h1>
+<p>Las tarifas de juego pagadas por los jugadores para juegos de arcade se distribuyen en la tabla de clasificaci&#xF3;n del juego.</p>
+<p>Ejemplo&#xFF09;Tabla de Clasificaci&#xF3;n de Dragotchi Parkour Race</p>
+<div style="display: flex; flex-direction: row; align-items: center;">
+    <div style="max-width: 50%;">
+        <img src="../images/exampleLeaderBoard.png" alt="Ejemplo de Tabla de Clasificaci&#xF3;n" style="max-width: 100%; height: auto;">
+    </div>
+    <div style="max-width: 50%;">
+    </div>
+</div>
+
+<p>Por ejemplo, si la tasa de distribuci&#xF3;n de Alice es del 33.74%, cuando alguien juega, aproximadamente 0.3374 USD de la tarifa de juego de 1 USD se transfiere a la billetera de Alice.</p>
+<p>El algoritmo para determinar la tasa de distribuci&#xF3;n en las carreras de Dragotchi se establece de modo que la tasa de distribuci&#xF3;n del jugador que corri&#xF3; m&#xE1;s lejos entre los que no alcanzaron la META sea la mitad de la tasa del jugador m&#xE1;s lento entre los que s&#xED; lo hicieron. La tasa de distribuci&#xF3;n se determina en proporci&#xF3;n a la puntuaci&#xF3;n (entre jugadores que alcanzaron la META, se basa en la velocidad del tiempo; entre los que no lo hicieron, se basa en la distancia recorrida).</p>
+<p>Las clasificaciones no se restablecen como regla general. Si se va a realizar un restablecimiento, se anunciar&#xE1; en Discord al menos con 14 d&#xED;as de anticipaci&#xF3;n. Cada juego tiene un algoritmo diferente para determinar la tasa de distribuci&#xF3;n, pero nuestro objetivo es idear y adoptar un algoritmo lo m&#xE1;s justo posible. Los detalles del algoritmo de tasa de distribuci&#xF3;n del juego se organizar&#xE1;n y publicar&#xE1;n en la secci&#xF3;n de algoritmos.</p>
+<div style="display: flex; flex-direction: row; align-items: center;">
+    <div style="max-width: 50%;">
+        <img src="../images/paymentworld.webp" alt="paymentworld" style="max-width: 100%; height: auto;">
+    </div>
+    <div style="max-width: 50%;">
+    </div>
+</div>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page: Saludos">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="development_and_deployment.html" class="navigation navigation-next " aria-label="Next page: Desarrollo y Despliegue">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Mecanismo","level":"1.3","depth":1,"next":{"title":"Desarrollo y Despliegue","level":"1.4","depth":1,"path":"development_and_deployment.md","ref":"development_and_deployment.md","articles":[]},"previous":{"title":"Saludos","level":"1.2","depth":1,"path":"introduction.md","ref":"introduction.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"favicon":"./images/favicon.ico","custom-favicon":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Whitepaper","language":"es","gitbook":"*","description":"Whitepaper of KeyItemApp"},"file":{"path":"mechanism.md","mtime":"2024-02-02T00:59:38.761Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-02-02T02:04:34.680Z"},"basePath":".","book":{"language":"es"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
